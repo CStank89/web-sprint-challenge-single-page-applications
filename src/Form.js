@@ -4,15 +4,19 @@ import {Link} from 'react-router-dom'
 
 
 const Form = (props) => {
+    const { formValues, change } = props
+
+
+
     return (
         <div>
-
+            
             <h1>Build Your Pizza</h1>
             <form>
                 <select>
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
+                    <option value={formValues}>Small</option>
+                    <option value={formValues}>Medium</option>
+                    <option value={formValues}>Large</option>
                 </select>
                 <label>
                     <button>Submit</button>
