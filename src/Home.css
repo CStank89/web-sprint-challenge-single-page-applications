@@ -1,0 +1,20 @@
+#cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+#cards2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+#button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
