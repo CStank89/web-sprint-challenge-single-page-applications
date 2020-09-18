@@ -1,13 +1,14 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
 import './Home.css'
+import pizzaImg from '../assets/Pizza.jpg'
  
 const Home = () => {
     return (
         <div>
             <Link to='/Form'>
                 <div id='button'>
-            <img src='/Assets/Pizza.jpg'></img>
+            <img src='../assets/Pizza.jpg'></img>
             <button>Order Pizza </button>
             </div>
             </Link>
