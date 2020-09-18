@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import Home from './Home'
+import Form from './Form'
+import { Router, Switch, Route } from 'react-router-dom'
+
+// const defaultValues = {
+  
+// }
+
+
 
 const App = () => {
+  // const [formValues, setFormValues] = useState()
+  // const [savedFormInfo, setSavedFormInfo] = useState([])
   return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </>
+    <div className='app'> 
+  <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/Form' component={Form} />
+       
+  </Switch>
+    </div>
   );
 };
 export default App;
